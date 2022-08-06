@@ -1,0 +1,23 @@
+{% extends 'base.html' %} 
+{% block head %}
+<title>Flask App</title>
+{% endblock %} 
+
+
+{% block body %}
+<h1>Sign and Encrypt</h1>
+<br>
+<br>
+
+
+<form action="/" method="post" enctype="multipart/form-data">
+    
+    <input type="text" name="data" id="data">
+
+    <input type="submit" value="Sign and Encrypt">
+
+     <!-- <input type="text" name="data" id="data" value="{{signed_data_}}"> > -->
+     
+    <p>{{signed_data_}}</p>
+</form>
+{% endblock %}
